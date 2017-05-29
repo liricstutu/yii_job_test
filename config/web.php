@@ -44,7 +44,15 @@ $config = [
             'timeZone'        => 'Europe/Tallinn',
             'defaultTimeZone' => 'Europe/Tallinn',
         ],
+        'urlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableStrictParsing' => false,
+        ],
     ],
+    'defaultRoute' => 'tasks/index',
+
     'params'     => $params,
 ];
 

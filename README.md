@@ -13,4 +13,6 @@ Added files due to this test:
 /views/tasks/..
 folders с js и css
 
-routeUrl ../index.php?r=tasks%2Findex
+Commit v0.1 - route update to prettyUrl:
+>routeUrl ../index.php?r=tasks%2Findex
+routeUrl hostname or hostname/tasks/index
