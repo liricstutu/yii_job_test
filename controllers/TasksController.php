@@ -47,7 +47,7 @@ class TasksController extends Controller
             $model = new Tasks();
         }
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model = new Tasks();
+            return $this->redirect(['index']);
         }
 
         return $this->render(

@@ -15,6 +15,9 @@ $("document").ready(function(){
         $("#new_task").on("pjax:end", function() {
             $.pjax.reload({container:"#tasks"});  //Reload GridView
         });
+          $('#datetimepicker1').datetimepicker({
+        locale: 'ET'
+    });
 });
 JS;
 $this->registerJs($script);
@@ -25,7 +28,7 @@ $this->registerJs($script);
     <?php $form = ActiveForm::begin(['options' => ['data-pjax' => '1']]); ?>
 
     <?php echo $form->field($model, 'text')->label(false) ?>
-    <?php echo $form->field($model, 'datetime')->label(false) ?>
+    <?php echo $form->field($model, 'datetime')->label(false)->textInput(['id' => 'datetimepicker1']) ?>
     <!--    --><?php //echo $form->field(
     //        $model,
     //        'datetime',
