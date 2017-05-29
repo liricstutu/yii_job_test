@@ -7,20 +7,6 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->registerCss(
-    ".list-group-item { 
-        position: #relative; 
-        padding-right: 70px;
-    } 
-    .actions {
-        position: absolute;
-        right: 16px;
-        top: 20px;
-    }
-    .actions .glyphicon {
-        margin-left: 4px;
-    }"
-)
 ?>
 <div class="tasks-index">
     <div class="row">
